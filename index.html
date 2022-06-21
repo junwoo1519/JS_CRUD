@@ -17,27 +17,27 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <button type="button">Create</button>
+        <button type="button" class="nav-btn" onclick="location.href='create.html'">Create</button>
       </li>
       <li class="nav-item">
-        <button type="button">Read</button>
+        <button type="button" class="nav-btn">Read</button>
       </li>
       <li class="nav-item">
-        <button type="button">Update</button>
+        <button type="button" class="nav-btn">Update</button>
       </li>
       <li class="nav-item">
-        <button type="button">Delete</button>
+        <button type="button" class="nav-btn">Delete</button>
       </li>
     </ul>
   </nav>
   <main>
-    <table>
+    <table class="crud-table">
       <colgroup>
+        <col style="width: 5%;">
+        <col style="width: 5%;">
         <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
-        <col style="width: auto;">
+        <col style="width: 10%;">
+        <col style="width: 10%;">
       </colgroup>
       <thead>
       <tr>
@@ -50,7 +50,11 @@
       </thead>
       <tbody>
       <tr>
-        <td></td>
+        <td><input type="checkbox" name="" id=""></td>
+        <td>1</td>
+        <td>안녕하세요.</td>
+        <td>이준우</td>
+        <td>22 / 06 /21</td>
       </tr>
       </tbody>
     </table>
