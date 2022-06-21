@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: "Noto Sans KR", 'Arial', 'MS Gothic';
+  font-family: "Noto Sans KR", 'Arial', 'MS Gothic', 'serif';
 }
 
 body {
@@ -9,9 +9,102 @@ body {
   padding-top: 300px;
 }
 
-.header{
-  .header-title{
-    font-size: 2.4rem;
+a, button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #bbbbbb;
+}
+
+//index
+.header-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+
+  .nav-item {
+    text-align: center;
+    background-color: #54b5f3;
+    width: 25%;
+
+    .nav-btn {
+      width: 100%;
+      padding: 20px 0;
+      color: #fff;
+      border: 1px solid #54b5f3;
+      transition: .3s;
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: #69ef63;
+      }
+    }
+  }
+}
+
+.crud-table {
+  width: 100%;
+
+  th, td {
+    border-top: 1px solid #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+    vertical-align: middle;
+    padding: 1.5rem 0;
     text-align: center;
   }
 }
+
+//index 종료
+
+//create
+.create-table {
+  width: 100%;
+
+  th, td {
+    border: 1px solid #bbbbbb;
+    vertical-align: middle;
+    padding: 1.5rem;
+  }
+}
+
+.btn-wrap {
+  text-align: center;
+  margin-top: 3rem;
+  .save-btn {
+    background-color: #54b5f3;
+    color: #fff;
+    padding: .7rem 1rem .7rem 1rem;
+    transition: .3s;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: #69ef63;
+    }
+
+  }
+
+  .cancel-btn {
+    background-color: #54b5f3;
+    color: #fff;
+    padding: .7rem 1rem .7rem 1rem;
+    transition: .3s;
+
+    &:hover {
+      background-color: #ef6394;
+    }
+  }
+}
+
+//create 종료
